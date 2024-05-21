@@ -1,0 +1,61 @@
+Home_Team,Away_Team,Home_Score,Away_Score,Rebounds,Assists,Blocks,Total_Score,Line,Over_Under,Bet,Met_Not_Met
+Atlanta Hawks,Washington Wizards,110,110,43,23,6,220,232,1,1,1
+Boston Celtics,Utah Jazz,105,115,51,25,3,220,216,0,0,1
+Brooklyn Nets,Toronto Raptors,113,104,55,26,4,217,208,1,0,0
+Charlotte Hornets,San Antonio Spurs,100,95,42,30,2,195,193,1,1,1
+Chicago Bulls,Sacramento Kings,103,109,43,25,5,212,193,0,1,0
+Cleveland Cavaliers,Portland Trail Blazers,97,110,45,28,4,207,232,0,1,0
+Dallas Mavericks,Phoenix Suns,119,95,46,30,4,214,217,0,1,0
+Denver Nuggets,Philadelphia 76ers,107,118,48,25,6,225,209,1,1,1
+Detroit Pistons,Orlando Magic,105,115,41,24,5,220,233,0,0,1
+Golden State Warriors,Oklahoma City Thunder,101,95,47,23,4,196,196,1,1,1
+Houston Rockets,New York Knicks,116,108,44,22,5,224,199,0,0,1
+Indiana Pacers,New Orleans Pelicans,116,118,42,30,3,234,221,1,0,0
+LA Clippers,Minnesota Timberwolves,99,114,47,22,5,213,215,1,1,1
+Los Angeles Lakers,Milwaukee Bucks,109,118,45,20,3,227,226,1,1,1
+Memphis Grizzlies,Miami Heat,106,96,46,20,3,202,216,0,1,0
+Miami Heat,Memphis Grizzlies,102,109,54,20,6,211,207,0,0,1
+Milwaukee Bucks,Los Angeles Lakers,111,97,43,20,2,208,195,1,0,0
+Minnesota Timberwolves,LA Clippers,97,119,42,28,6,216,236,1,1,1
+New Orleans Pelicans,Indiana Pacers,113,120,46,21,5,233,199,1,1,1
+New York Knicks,Houston Rockets,115,106,46,30,2,221,228,0,1,0
+Oklahoma City Thunder,Golden State Warriors,96,95,50,26,2,191,230,0,0,1
+Orlando Magic,Detroit Pistons,119,109,48,20,3,228,198,1,0,0
+Philadelphia 76ers,Denver Nuggets,118,116,54,28,5,234,235,0,1,0
+Phoenix Suns,Dallas Mavericks,105,99,40,29,2,204,214,0,0,1
+Portland Trail Blazers,Cleveland Cavaliers,98,111,42,23,2,209,198,0,1,0
+Sacramento Kings,Chicago Bulls,119,112,44,23,6,231,230,0,1,0
+San Antonio Spurs,Charlotte Hornets,95,115,41,23,5,210,191,1,0,0
+Toronto Raptors,Brooklyn Nets,119,102,55,22,6,221,203,1,0,0
+Utah Jazz,Boston Celtics,114,99,40,26,2,213,233,1,1,1
+Washington Wizards,Atlanta Hawks,110,96,43,25,2,206,225,1,0,0
+Atlanta Hawks,Washington Wizards,96,119,40,25,2,215,233,0,0,1
+Boston Celtics,Utah Jazz,96,110,48,26,3,206,213,0,0,1
+Brooklyn Nets,Toronto Raptors,105,108,51,20,5,213,221,1,1,1
+Charlotte Hornets,San Antonio Spurs,112,115,53,21,6,227,239,1,1,1
+Chicago Bulls,Sacramento Kings,102,99,45,24,5,201,193,0,1,0
+Cleveland Cavaliers,Portland Trail Blazers,95,107,52,30,6,202,202,0,0,1
+Dallas Mavericks,Phoenix Suns,102,115,50,26,6,217,228,1,0,0
+Denver Nuggets,Philadelphia 76ers,106,109,45,26,2,215,202,1,0,0
+Detroit Pistons,Orlando Magic,104,101,49,21,5,205,234,0,0,1
+Golden State Warriors,Oklahoma City Thunder,102,108,45,21,5,210,231,0,1,0
+Houston Rockets,New York Knicks,112,98,54,22,4,210,191,0,0,1
+Indiana Pacers,New Orleans Pelicans,100,118,46,29,5,218,228,1,0,0
+LA Clippers,Minnesota Timberwolves,114,103,40,20,6,217,231,1,0,0
+Los Angeles Lakers,Milwaukee Bucks,114,99,41,23,3,213,237,0,0,1
+Memphis Grizzlies,Miami Heat,108,120,51,29,6,228,200,1,0,0
+Miami Heat,Memphis Grizzlies,107,119,50,27,2,226,213,1,1,1
+Milwaukee Bucks,Los Angeles Lakers,106,95,51,22,5,201,207,0,0,1
+Minnesota Timberwolves,LA Clippers,115,95,48,25,5,210,237,1,0,0
+New Orleans Pelicans,Indiana Pacers,115,118,40,29,6,233,213,0,1,0
+New York Knicks,Houston Rockets,96,98,54,21,5,194,193,1,1,1
+Oklahoma City Thunder,Golden State Warriors,119,103,46,20,2,222,206,0,0,1
+Orlando Magic,Detroit Pistons,109,105,54,28,4,214,217,1,0,0
+Philadelphia 76ers,Denver Nuggets,102,97,49,30,3,199,199,0,1,0
+Phoenix Suns,Dallas Mavericks,104,105,55,20,4,209,223,1,0,0
+Portland Trail Blazers,Cleveland Cavaliers,102,100,55,24,2,202,225,1,1,1
+Sacramento Kings,Chicago Bulls,115,102,40,25,4,217,199,1,0,0
+San Antonio Spurs,Charlotte Hornets,103,115,48,25,2,218,221,0,1,0
+Toronto Raptors,Brooklyn Nets,104,103,50,22,6,207,199,0,1,0
+Utah Jazz,Boston Celtics,102,101,41,25,3,203,231,0,1,0
+Washington Wizards,Atlanta Hawks,109,106,49,28,6,215,218,1,1,1
