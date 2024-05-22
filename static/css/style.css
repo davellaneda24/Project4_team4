@@ -40,7 +40,7 @@ option {
 }
 
 .navbar-custom {
-    background-image: url('https://i.pinimg.com/originals/51/c3/18/51c31816ee64c4f6b3edb298535bb692.jpg');
+    background-image: url('https://smartabase.com/wp-content/uploads/2020/12/nba-banner.png');
     background-size: cover; 
     background-position: center; 
 }
@@ -59,18 +59,16 @@ h1 {
 
 .navbar-custom .logo {
     margin: 0;
-    font-family: 'Sporting Outline', sans-serif;                                   
     font-size: 48px; /* Adjust as needed */
-    color: black;
-    background-color: rgba(173, 216, 230, 0.5); /* lightblue with 50% opacity */
+    color: rgb(228, 226, 226);
+    position: static;
+    text-align: center; /* Center-align the text */
 }
-
 .navbar-custom .subtitle {
     margin: 0;
-    font-family: 'Sporting Outline', sans-serif;
     font-size: 24px; /* Adjust as needed */
-    color: black; /* Adjust as needed */
-    background-color: rgba(173, 216, 230, 0.5); /* lightblue with 50% opacity */
+    color: rgb(206, 200, 200); /* Adjust as needed */
+
 }
 
 h1.team_name {
@@ -117,4 +115,10 @@ h1.team_name {
   .pop-out {
     animation: popOut 0.5s ease-in-out;
   }
+.row, .row * {
+    color: black;
+}
+.container, .container * {
+    color: black;
+}
   
