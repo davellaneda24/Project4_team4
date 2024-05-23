@@ -1,333 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NBA Teams and Prediction Model</title>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="static/css/style.css" rel="stylesheet">
-
-    <style>
-        body {
-            background: linear-gradient(to bottom, white, grey);
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        ul {
-            list-style-type: none;
-        }
-        li {
-            margin: 10px 0;
-        }
-        img {
-            vertical-align: middle;
-            height: 150px;
-            margin-right: 10px;
-        }
-        span {
-            font-size: 18px;
-            vertical-align: middle;
-        }
-        select {
-            width: 100%;
-            max-width: 300px;
-            padding: 5px;
-            margin: 10px 0;
-        }
-        option {
-            padding: 5px;
-        }
-        .row {
-            display: flex;
-            justify-content: space-between;
-        }
-        .col-md-6 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project 3 Title</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="static/css/style.css" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/sporting-outline" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <div class="page-header">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <h1 class="logo">Website Title Here</h1>
-                        <p class="subtitle">Get yo money up, not yo funny up!</p>
-                    </div>
-                    <div class="nav-menu d-none d-lg-block">
-                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#intro">Prediction Model</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#team-dropdown">Team Dropdown</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#other-section">Other Section</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#team">Team</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
 
-        <div class="row">
-            <section id="prediction-model">
-                <div class="row">
-                    <h1>Prediction Model</h1>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="list-group">
-                            <!-- Prediction model content goes here -->
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <!-- Additional content for prediction model -->
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+          .nav-link {
+              color: rgb(255, 255, 255);
+          }
+      </style>
+  </head>
+  <body>
+      <div class="container">
+          <div class="page-header">
+              <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom">
+                  <div class="container-fluid">
+                      <div class="navbar-header">
+                          <h1 class="logo">NetGains.net</h1>
+                          <p class="subtitle">Get Yo Money Up, Not Yo Funny Up!</p>
+                      </div>
+                      <div class="nav-menu d-none d-lg-block">
+                          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link" href="">Prediction Model</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="">Team Dropdown</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="">Other Section</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="">Team</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+      </div>
+  </body>
+  </html>
+  
 
+    <div class="row">
+      <section id="prediction model">
         <div class="row">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-1 border-bottom"></div>
-            <section id="team-dropdown">
-                <div class="row">
-                    <h1>Team Dropdown</h1>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <label for="home-team">Home Team:</label>
-                        <select id="home-team" onchange="updateLogo('home-team', 'home-logo')">
-                            <option value="" disabled selected>Select a home team</option>
-                            <option value="Atlanta Hawks">Atlanta Hawks</option>
-                            <option value="Boston Celtics">Boston Celtics</option>
-                            <option value="Brooklyn Nets">Brooklyn Nets</option>
-                            <option value="Charlotte Hornets">Charlotte Hornets</option>
-                            <option value="Chicago Bulls">Chicago Bulls</option>
-                            <option value="Cleveland Cavaliers">Cleveland Cavaliers</option>
-                            <option value="Dallas Mavericks">Dallas Mavericks</option>
-                            <option value="Denver Nuggets">Denver Nuggets</option>
-                            <option value="Detroit Pistons">Detroit Pistons</option>
-                            <option value="Golden State Warriors">Golden State Warriors</option>
-                            <option value="Houston Rockets">Houston Rockets</option>
-                            <option value="Indiana Pacers">Indiana Pacers</option>
-                            <option value="LA Clippers">LA Clippers</option>
-                            <option value="Los Angeles Lakers">Los Angeles Lakers</option>
-                            <option value="Memphis Grizzlies">Memphis Grizzlies</option>
-                            <option value="Miami Heat">Miami Heat</option>
-                            <option value="Milwaukee Bucks">Milwaukee Bucks</option>
-                            <option value="Minnesota Timberwolves">Minnesota Timberwolves</option>
-                            <option value="New Orleans Pelicans">New Orleans Pelicans</option>
-                            <option value="New York Knicks">New York Knicks</option>
-                            <option value="Oklahoma City Thunder">Oklahoma City Thunder</option>
-                            <option value="Orlando Magic">Orlando Magic</option>
-                            <option value="Philadelphia 76ers">Philadelphia 76ers</option>
-                            <option value="Phoenix Suns">Phoenix Suns</option>
-                            <option value="Portland Trail Blazers">Portland Trail Blazers</option>
-                            <option value="Sacramento Kings">Sacramento Kings</option>
-                            <option value="San Antonio Spurs">San Antonio Spurs</option>
-                            <option value="Toronto Raptors">Toronto Raptors</option>
-                            <option value="Utah Jazz">Utah Jazz</option>
-                            <option value="Washington Wizards">Washington Wizards</option>
-                        </select>
-                        <div id="home-logo"></div>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="away-team">Away Team:</label>
-                        <select id="away-team" onchange="updateLogo('away-team', 'away-logo')">
-                            <option value="" disabled selected>Select an away team</option>
-                            <option value="Atlanta Hawks">Atlanta Hawks</option>
-                            <option value="Boston Celtics">Boston Celtics</option>
-                            <option value="Brooklyn Nets">Brooklyn Nets</option>
-                            <option value="Charlotte Hornets">Charlotte Hornets</option>
-                            <option value="Chicago Bulls">Chicago Bulls</option>
-                            <option value="Cleveland Cavaliers">Cleveland Cavaliers</option>
-                            <option value="Dallas Mavericks">Dallas Mavericks</option>
-                            <option value="Denver Nuggets">Denver Nuggets</option>
-                            <option value="Detroit Pistons">Detroit Pistons</option>
-                            <option value="Golden State Warriors">Golden State Warriors</option>
-                            <option value="Houston Rockets">Houston Rockets</option>
-                            <option value="Indiana Pacers">Indiana Pacers</option>
-                            <option value="LA Clippers">LA Clippers</option>
-                            <option value="Los Angeles Lakers">Los Angeles Lakers</option>
-                            <option value="Memphis Grizzlies">Memphis Grizzlies</option>
-                            <option value="Miami Heat">Miami Heat</option>
-                            <option value="Milwaukee Bucks">Milwaukee Bucks</option>
-                            <option value="Minnesota Timberwolves">Minnesota Timberwolves</option>
-                            <option value="New Orleans Pelicans">New Orleans Pelicans</option>
-                            <option value="New York Knicks">New York Knicks</option>
-                            <option value="Oklahoma City Thunder">Oklahoma City Thunder</option>
-                            <option value="Orlando Magic">Orlando Magic</option>
-                            <option value="Philadelphia 76ers">Philadelphia 76ers</option>
-                            <option value="Phoenix Suns">Phoenix Suns</option>
-                            <option value="Portland Trail Blazers">Portland Trail Blazers</option>
-                            <option value="Sacramento Kings">Sacramento Kings</option>
-                            <option value="San Antonio Spurs">San Antonio Spurs</option>
-                            <option value="Toronto Raptors">Toronto Raptors</option>
-                            <option value="Utah Jazz">Utah Jazz</option>
-                            <option value="Washington Wizards">Washington Wizards</option>
-                        </select>
-                        <div id="away-logo"></div>
-                    </div>
-                </div>
-                <button onclick="submitSelection()">Submit</button>
-            </section>
+          <h1>Prediction Model</h1>
         </div>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-group">
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+            </div>
+            <div class="row">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-        <div class="row">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-1 border-bottom"></div>
-            <section id="other-section">
-                <div class="row">
-                    <h1>Other Section</h1>
+    <div class="row">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-1 border-bottom"></div>
+      <section id="team-dropdown">
+          <div class="row">
+              <h1>Team Dropdown</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-12 team-dropdown-container">
+                <div class="team-logo">
+                    <label for="home-team">Home Team:</label>
+                    <select id="home-team" onchange="updateLogo('home-team', 'home-logo')">
+                        <option value="" disabled selected>Select a home team</option>
+                        <option value="Atlanta Hawks">Atlanta Hawks</option>
+                        <option value="Boston Celtics">Boston Celtics</option>
+                        <option value="Brooklyn Nets">Brooklyn Nets</option>
+                        <option value="Charlotte Hornets">Charlotte Hornets</option>
+                        <option value="Chicago Bulls">Chicago Bulls</option>
+                        <option value="Cleveland Cavaliers">Cleveland Cavaliers</option>
+                        <option value="Dallas Mavericks">Dallas Mavericks</option>
+                        <option value="Denver Nuggets">Denver Nuggets</option>
+                        <option value="Detroit Pistons">Detroit Pistons</option>
+                        <option value="Golden State Warriors">Golden State Warriors</option>
+                        <option value="Houston Rockets">Houston Rockets</option>
+                        <option value="Indiana Pacers">Indiana Pacers</option>
+                        <option value="LA Clippers">LA Clippers</option>
+                        <option value="Los Angeles Lakers">Los Angeles Lakers</option>
+                        <option value="Memphis Grizzlies">Memphis Grizzlies</option>
+                        <option value="Miami Heat">Miami Heat</option>
+                        <option value="Milwaukee Bucks">Milwaukee Bucks</option>
+                        <option value="Minnesota Timberwolves">Minnesota Timberwolves</option>
+                        <option value="New Orleans Pelicans">New Orleans Pelicans</option>
+                        <option value="New York Knicks">New York Knicks</option>
+                        <option value="Oklahoma City Thunder">Oklahoma City Thunder</option>
+                        <option value="Orlando Magic">Orlando Magic</option>
+                        <option value="Philadelphia 76ers">Philadelphia 76ers</option>
+                        <option value="Phoenix Suns">Phoenix Suns</option>
+                        <option value="Portland Trail Blazers">Portland Trail Blazers</option>
+                        <option value="Sacramento Kings">Sacramento Kings</option>
+                        <option value="San Antonio Spurs">San Antonio Spurs</option>
+                        <option value="Toronto Raptors">Toronto Raptors</option>
+                        <option value="Utah Jazz">Utah Jazz</option>
+                        <option value="Washington Wizards">Washington Wizards</option>
+                    </select>
+                    <div id="home-logo"></div>
                 </div>
-                <div id="">
-                    <!-- Other section content goes here -->
+                <div id="vs">VS.</div>
+                <div class="team-logo">
+                    <label for="away-team">Away Team:</label>
+                    <select id="away-team" onchange="updateLogo('away-team', 'away-logo')">
+                        <option value="" disabled selected>Select an away team</option>
+                        <option value="Atlanta Hawks">Atlanta Hawks</option>
+                        <option value="Boston Celtics">Boston Celtics</option>
+                        <option value="Brooklyn Nets">Brooklyn Nets</option>
+                        <option value="Charlotte Hornets">Charlotte Hornets</option>
+                        <option value="Chicago Bulls">Chicago Bulls</option>
+                        <option value="Cleveland Cavaliers">Cleveland Cavaliers</option>
+                        <option value="Dallas Mavericks">Dallas Mavericks</option>
+                        <option value="Denver Nuggets">Denver Nuggets</option>
+                        <option value="Detroit Pistons">Detroit Pistons</option>
+                        <option value="Golden State Warriors">Golden State Warriors</option>
+                        <option value="Houston Rockets">Houston Rockets</option>
+                        <option value="Indiana Pacers">Indiana Pacers</option>
+                        <option value="LA Clippers">LA Clippers</option>
+                        <option value="Los Angeles Lakers">Los Angeles Lakers</option>
+                        <option value="Memphis Grizzlies">Memphis Grizzlies</option>
+                        <option value="Miami Heat">Miami Heat</option>
+                        <option value="Milwaukee Bucks">Milwaukee Bucks</option>
+                        <option value="Minnesota Timberwolves">Minnesota Timberwolves</option>
+                        <option value="New Orleans Pelicans">New Orleans Pelicans</option>
+                        <option value="New York Knicks">New York Knicks</option>
+                        <option value="Oklahoma City Thunder">Oklahoma City Thunder</option>
+                        <option value="Orlando Magic">Orlando Magic</option>
+                        <option value="Philadelphia 76ers">Philadelphia 76ers</option>
+                        <option value="Phoenix Suns">Phoenix Suns</option>
+                        <option value="Portland Trail Blazers">Portland Trail Blazers</option>
+                        <option value="Sacramento Kings">Sacramento Kings</option>
+                        <option value="San Antonio Spurs">San Antonio Spurs</option>
+                        <option value="Toronto Raptors">Toronto Raptors</option>
+                        <option value="Utah Jazz">Utah Jazz</option>
+                        <option value="Washington Wizards">Washington Wizards</option>
+                    </select>
+                    <div id="away-logo"></div>
                 </div>
-            </section>
+            </div>
         </div>
+        <div id="submit-button-container">
+          <button onclick="submitSelection()" class="btn btn-primary">Submit</button>
+        </div>
+    </section>
+</div>
 
+    <div class="row">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-1 border-bottom"></div>
+      <section id="other section">
         <div class="row">
-            <div class="d-flex justify-content-between flex-wrap flexflex-md-nowrap align-items-center pt-3 pb-2 mb-1 border-bottom"></div>
-            <section id="other-section">
-                <div class="row">
-                    <h1>Other Section</h1>
-                </div>
-                <div id="">
-                    <!-- Other section content goes here -->
-                </div>
-            </section>
+          <h1>Other Section</h1>
         </div>
-    
+        <div id="">
+        </div>
+      </section>
+    </div>
+
+    <div class="row">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-1 border-bottom"></div>
+      <section id="team">
         <div class="row">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-1 border-bottom"></div>
-            <section id="team">
-                <div class="row">
-                    <h1>Meet The Team</h1>
-                </div>
-                <script>
-                    function updateLogo(teamDropdownId, logoDivId) {
-                        var selectedTeam = document.getElementById(teamDropdownId).value;
-                        var logoUrl = "";
-                        switch(selectedTeam) {
-                            case "Atlanta Hawks":
-                                logoUrl = "https://content.sportslogos.net/logos/6/220/full/8190_atlanta_hawks-primary-2021.png";
-                                break;
-                            case "Boston Celtics":
-                                logoUrl = "https://content.sportslogos.net/logos/6/213/full/boston_celtics_logo_primary_19977628.png";
-                                break;
-                            case "Brooklyn Nets":
-                                logoUrl = "https://content.sportslogos.net/logos/6/3786/full/brooklyn_nets_logo_alternate_20138452.png";
-                                break;
-                            case "Charlotte Hornets":
-                                logoUrl = "https://content.sportslogos.net/logos/6/5120/full/1926_charlotte__hornets_-primary-2015.png";
-                                break;
-                            case "Chicago Bulls":
-                                logoUrl = "https://content.sportslogos.net/logos/6/221/full/chicago_bulls_logo_primary_19672598.png";
-                                break;
-                            case "Cleveland Cavaliers":
-                                logoUrl = "https://content.sportslogos.net/logos/6/222/full/cleveland_cavaliers_logo_primary_2023_sportslogosnet-5369.png";
-                                break;
-                            case "Dallas Mavericks":
-                                logoUrl = "https://content.sportslogos.net/logos/6/228/full/3463_dallas_mavericks-primary-2018.png";
-                                break;
-                            case "Denver Nuggets":
-                                logoUrl = "https://content.sportslogos.net/logos/6/229/full/8926_denver_nuggets-primary-2019.png";
-                                break;
-                            case "Detroit Pistons":
-                                logoUrl = "https://content.sportslogos.net/logos/6/223/full/detroit_pistons_logo_primary_20185710.png";
-                                break;
-                            case "Golden State Warriors":
-                                logoUrl = "https://content.sportslogos.net/logos/6/235/full/3152_golden_state_warriors-primary-2020.png";
-                                break;
-                            case "Houston Rockets":
-                                logoUrl = "https://content.sportslogos.net/logos/6/230/full/6830_houston_rockets-primary-2020.png";
-                                break;
-                            case "Indiana Pacers":
-                                logoUrl = "https://content.sportslogos.net/logos/6/224/full/4812_indiana_pacers-primary-2018.png";
-                                break;
-                            case "LA Clippers":
-                                logoUrl = "https://content.sportslogos.net/logos/6/236/full/los_angeles_clippers_logo_primary_2025_sportslogosnet-5542.png";
-                                break;
-                            case "Los Angeles Lakers":
-                                logoUrl = "https://content.sportslogos.net/logos/6/237/full/los_angeles_lakers_logo_primary_2024_sportslogosnet-7324.png";
-                                break;
-                            case "Memphis Grizzlies":
-                                logoUrl = "https://content.sportslogos.net/logos/6/231/full/4373_memphis_grizzlies-primary-2019.png";
-                                break;
-                            case "Miami Heat":
-                                logoUrl = "https://content.sportslogos.net/logos/6/214/full/burm5gh2wvjti3xhei5h16k8e.gif";
-                                break;
-                            case "Milwaukee Bucks":
-                                logoUrl = "https://content.sportslogos.net/logos/6/225/full/milwaukee_bucks_logo_primary_20165763.png";
-                                break;
-                            case "Minnesota Timberwolves":
-                                logoUrl = "https://content.sportslogos.net/logos/6/232/full/9669_minnesota_timberwolves-primary-2018.png";
-                                break;
-                            case "New Orleans Pelicans":
-                                logoUrl = "https://content.sportslogos.net/logos/6/4962/full/new_orleans_pelicans_logo_primary_2024_sportslogosnet-9292.png";
-                                break;
-                            case "New York Knicks":
-                                logoUrl = "https://content.sportslogos.net/logos/6/216/full/new_york_knicks_logo_primary_2024_sportslogosnet-7170.png";
-                                break;
-                            case "Oklahoma City Thunder":
-                                logoUrl = "https://content.sportslogos.net/logos/6/2687/full/khmovcnezy06c3nm05ccn0oj2.png";
-                                break;
-                            case "Orlando Magic":
-                                logoUrl = "https://content.sportslogos.net/logos/6/217/full/orlando_magic_logo_primary_20117178.png";
-                                break;
-                            case "Philadelphia 76ers":
-                                logoUrl = "https://content.sportslogos.net/logos/6/218/full/7034_philadelphia_76ers-primary-2016.png";
-                                break;
-                            case "Phoenix Suns":
-                                logoUrl = "https://content.sportslogos.net/logos/6/238/full/phoenix_suns_logo_primary_20143696.png";
-                                break;
-                            case "Portland Trail Blazers":
-                                logoUrl = "https://content.sportslogos.net/logos/6/239/full/9725_portland_trail_blazers-primary-2018.png";
-                                break;
-                            case "Sacramento Kings":
-                                logoUrl = "https://content.sportslogos.net/logos/6/240/full/4043_sacramento_kings-primary-2017.png";
-                                break;
-                            case "San Antonio Spurs":
-                                logoUrl = "https://content.sportslogos.net/logos/6/233/full/2547_san_antonio_spurs-primary-2018.png";
-                                break;
-                            case "Toronto Raptors":
-                                logoUrl = "https://content.sportslogos.net/logos/6/227/full/7024_toronto_raptors-primary-2021.png";
-                                break;
-                            case "Utah Jazz":
-                                logoUrl = "https://content.sportslogos.net/logos/6/234/full/utah_jazz_logo_primary_2023_sportslogosnet-8513.png";
-                                break;
-                            case "Washington Wizards":
-                                logoUrl = "https://content.sportslogos.net/logos/6/219/full/5671_washington_wizards-primary-2016.png";
-                                break;
-                            default:
-                                logoUrl = "";
-                        }
-                        document.getElementById(logoDivId).innerHTML = logoUrl ? "<img src='" + logoUrl + "' alt='" + selectedTeam + " Logo'>" : "";
-                    }
-            
-                    function submitSelection() {
-                        var homeTeam = document.getElementById("home-team").value;
-                        var awayTeam = document.getElementById("away-team").value;
-                        if (homeTeam === "" || awayTeam === "") {
-                            alert("Please select both home and away teams.");
-                        } else {
-                            alert("You selected " + homeTeam + " as the home team and " + awayTeam + " as the away team.");
-                        }
-                    }
-                </script>
-            </body>
-            </html>
-    
+          <h1>Meet The Team</h1>
+        </div>
+        <div id="team_row">
+        </div>
+      </section>
+    </div>
+
+    <div class="team_row">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="team_photos/david.png" alt="David Avellaneda" style="height:150px; width: 150px;;">
+          <h1 class="team_name">David Avellaneda</h1>
+        </div>
+        <div class="col-md-3">
+          <img src="team_photos/ben.png" alt="Ben Tokarczyk" style="height:150px; width:150px;">
+          <h1 class="team_name">Ben Tokarczyk</h1>
+        </div>
+        <div class="col-md-3">
+          <img src="team_photos/latasha.png" alt="Latasha Jones" style="height:150px; width:150px;">
+          <h1 class="team_name">Latasha Jones</h1>
+        </div>
+        <div class="col-md-3">
+          <img src="team_photos/rayon.png" alt="Rayon King" style="height:150px; width:150px;">
+          <h1 class="team_name">Rayon King</h1>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./static/js/app.js"></script>
+  <script src="./static/js/logos.js"></script>
+
+</body>
+
+</html>
