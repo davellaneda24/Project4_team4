@@ -45,6 +45,7 @@ option {
     background-position: center; 
 }
 
+
 h1 {
     color: antiquewhite;
     font-family: Arial, Helvetica, sans-serif; /* Changed to monospace */
@@ -73,9 +74,10 @@ h1 {
 }
 
 h1.team_name {
-    font-size: 26px;
+    font-size: 20px;
     font-family: Helvetica; /* Changed to monospace */
 }
+
 
 .team-dropdown-container {
     display: flex;
@@ -125,3 +127,9 @@ h1.team_name {
     color: black;
     font-family: Helvetica; /* Changed to monospace */
 }
+
+.footer {
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+  }

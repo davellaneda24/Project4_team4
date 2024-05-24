@@ -101,22 +101,22 @@ function updateLogo(teamDropdownId, logoDivId) {
 function submitSelection() {
     var homeTeam = document.getElementById("home-team").value;
     var awayTeam = document.getElementById("away-team").value;
+    const homeLogo = document.getElementById('home-logo');
+    const awayLogo = document.getElementById('away-logo');
+
     if (homeTeam === "" || awayTeam === "") {
         alert("Please select both home and away teams.");
     } else {
-        alert("You selected " + homeTeam + " as the home team and " + awayTeam + " as the away team.");
-    }
-    const homeLogo = document.getElementById('home-logo');
-    const awayLogo = document.getElementById('away-logo');
-  
-    // Add the pop-out class to both logos
-    homeLogo.classList.add('pop-out');
-    awayLogo.classList.add('pop-out');
-  
-    // Remove the pop-out class after the animation is done
-    setTimeout(() => {
-      homeLogo.classList.remove('pop-out');
-      awayLogo.classList.remove('pop-out');
-    }, 500);
+        // Add the pop-out class to both logos
+        homeLogo.classList.add('pop-out');
+        awayLogo.classList.add('pop-out');
 
+        // Remove the pop-out class after the animation is done
+        setTimeout(() => {
+            homeLogo.classList.remove('pop-out');
+            awayLogo.classList.remove('pop-out');
+            // Display the alert after the pop-out animation
+            alert("You selected " + homeTeam + " as the home team and " + awayTeam + " as the away team.");
+        }, 500); // Match the delay to the duration of the pop-out animation (0.5s)
+    }
 }
