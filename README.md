@@ -2,9 +2,11 @@
 
 
 ## $\color{lightskyblue}{\textsf{Description}}$
-This project gathers nba regular season team data from the seasons 2021-2024 as well as, the over/under lines for each of the respective games during the period. The over/under line in sports betting is also known as "totals".  The totals is a wager on whether the total score is over or under a number set by the sports book.
+This project compiles NBA regular season team data from the 2021-2024 seasons, alongside the over/under lines for each respective game within this timeframe. The over/under line, also referred to as "totals" in sports betting, represents a wager on whether the total combined score of both teams in a game will exceed or fall short of a predefined number set by the sportsbook.<br><br>
 
-Example: if the over/under line is set at 200.5 the bettors can wager on whether the total points scored by both teams will be 201 or more (over) or 200 or fewer (under).
+Users can select both a home team and an away team, and based on the provided over/under line, a prediction will be made for whether the total score will be over or under the set line. <br><br>
+
+For instance, if the over/under line is established at 200.5, bettors can place a wager on whether the total points scored by both teams will be 201 or more (over) or 200 or fewer (under).
 
 
 ## $\color{lightskyblue}{\textsf{Visuals}}$
