@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/sporting-outline');
 
 body {
-    background: linear-gradient(to bottom, white, grey);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(80, 80, 80));
     margin: 0 10%;
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -38,14 +38,13 @@ option {
     flex-direction: column;
     align-items: center;
 }
-
 .navbar-custom {
     background-image: url('https://smartabase.com/wp-content/uploads/2020/12/nba-banner.png');
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px; /* Add rounded edges */
+    background-color: rgba(14, 170, 209, 0.8); /* Add transparency */
 }
-
-
 h1 {
     color: antiquewhite;
     font-family: Arial, Helvetica, sans-serif; /* Changed to monospace */
