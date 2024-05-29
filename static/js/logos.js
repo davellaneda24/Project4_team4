@@ -1,11 +1,7 @@
-// Function to fetch data from your API
+// Function to fetch data from your API using d3
 async function fetchTeams() {
     try {
-        const response = await fetch('/api/v1.0/predict');
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        const data = await response.json();
+        const data = await d3.json('http://127.0.0.1:5000/api/v1.0/predict/');
         const { home_name, visitor_name, over_under } = data;
 
         // Update the dropdown values
@@ -18,7 +14,6 @@ async function fetchTeams() {
         // Update the logos
         updateLogo('home-team', 'home-logo');
         updateLogo('away-team', 'away-logo');
-
     } catch (error) {
         console.error('There was a problem with the fetch operation:', error);
     }
@@ -41,8 +36,8 @@ function populateOverUnderDropdown(selectedValue) {
 
     for (let i = 100; i <= 300; i += 0.5) {
         const option = document.createElement('option');
-        option.value = i;
-        option.text = i;
+        option.value = i.toFixed(1);
+        option.text = i.toFixed(1);
         dropdown.appendChild(option);
     }
 
@@ -151,6 +146,7 @@ function updateLogo(teamDropdownId, logoDivId) {
     }
     document.getElementById(logoDivId).innerHTML = logoUrl ? "<img src='" + logoUrl + "' alt='" + selectedTeam + " Logo'>" : "";
 }
+
 
 // Function to handle team selection submission
 function submitSelection() {
