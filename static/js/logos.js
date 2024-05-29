@@ -1,3 +1,57 @@
+// Function to fetch data from your API
+async function fetchTeams() {
+    try {
+        const response = await fetch('/api/v1.0/predict');
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        const { home_name, visitor_name, over_under } = data;
+
+        // Update the dropdown values
+        updateDropdown('home-team', home_name);
+        updateDropdown('away-team', visitor_name);
+
+        // Populate the over/under line dropdown
+        populateOverUnderDropdown(over_under);
+
+        // Update the logos
+        updateLogo('home-team', 'home-logo');
+        updateLogo('away-team', 'away-logo');
+
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+    }
+}
+
+// Function to update dropdown options
+function updateDropdown(dropdownId, teamName) {
+    const dropdown = document.getElementById(dropdownId);
+    const option = document.createElement('option');
+    option.value = teamName;
+    option.text = teamName;
+    dropdown.innerHTML = ''; // Clear existing options
+    dropdown.appendChild(option);
+}
+
+// Function to populate the Over/Under Line dropdown
+function populateOverUnderDropdown(selectedValue) {
+    const dropdown = document.getElementById('over-under-line');
+    dropdown.innerHTML = ''; // Clear existing options
+
+    for (let i = 100; i <= 300; i += 0.5) {
+        const option = document.createElement('option');
+        option.value = i;
+        option.text = i;
+        dropdown.appendChild(option);
+    }
+
+    // Set the selected value if it exists in the options
+    if (selectedValue !== undefined && selectedValue !== null) {
+        dropdown.value = selectedValue;
+    }
+}
+
 function updateLogo(teamDropdownId, logoDivId) {
     var selectedTeam = document.getElementById(teamDropdownId).value;
     var logoUrl = "";
@@ -98,25 +152,45 @@ function updateLogo(teamDropdownId, logoDivId) {
     document.getElementById(logoDivId).innerHTML = logoUrl ? "<img src='" + logoUrl + "' alt='" + selectedTeam + " Logo'>" : "";
 }
 
+// Function to handle team selection submission
 function submitSelection() {
     var homeTeam = document.getElementById("home-team").value;
     var awayTeam = document.getElementById("away-team").value;
+    var overUnderLine = document.getElementById("over-under-line").value;
     const homeLogo = document.getElementById('home-logo');
     const awayLogo = document.getElementById('away-logo');
 
-    if (homeTeam === "" || awayTeam === "") {
-        alert("Please select both home and away teams.");
+    if (homeTeam === "" || awayTeam === "" || overUnderLine === "") {
+        alert("Please select both home and away teams, and enter the Over/Under Line.");
     } else {
-        // Add the pop-out class to both logos
         homeLogo.classList.add('pop-out');
         awayLogo.classList.add('pop-out');
 
-        // Remove the pop-out class after the animation is done
         setTimeout(() => {
             homeLogo.classList.remove('pop-out');
             awayLogo.classList.remove('pop-out');
-            // Display the alert after the pop-out animation
-            alert("You selected " + homeTeam + " as the home team and " + awayTeam + " as the away team.");
-        }, 500); // Match the delay to the duration of the pop-out animation (0.5s)
+            alert("You selected " + homeTeam + " as the home team, " + awayTeam + " as the away team, and an Over/Under Line of " + overUnderLine + ".");
+        }, 500);
     }
 }
+
+// Populate the over/under line dropdown
+function populateOverUnderDropdown() {
+    const dropdown = document.getElementById('over-under-line');
+    dropdown.innerHTML = ''; // Clear existing options
+
+    for (let i = 100; i <= 300; i += 0.5) {
+        const option = document.createElement('option');
+        option.value = i.toFixed(1);
+        option.text = i.toFixed(1);
+        dropdown.appendChild(option);
+    }
+
+    console.log('Over/Under Line dropdown populated.');
+}
+
+// Call fetchTeams function when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    fetchTeams();
+    populateOverUnderDropdown();
+});
