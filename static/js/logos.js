@@ -144,7 +144,6 @@ function updateLogo(teamDropdownId, logoDivId) {
     document.getElementById(logoDivId).innerHTML = logoUrl ? "<img src='" + logoUrl + "' alt='" + selectedTeam + " Logo'>" : "";
 }
 
-
 // Function to handle team selection submission
 function submitSelection() {
     var homeTeam = document.getElementById("home-team").value;
@@ -162,27 +161,29 @@ function submitSelection() {
         setTimeout(() => {
             homeLogo.classList.remove('pop-out');
             awayLogo.classList.remove('pop-out');
-            alert("You selected " + homeTeam + " as the home team, " + awayTeam + " as the away team, and an Over/Under Line of " + overUnderLine + ".");
             passToModel(homeTeam, awayTeam, overUnderLine);
         }, 500);
     }
-    
 }
-   
+
 function get_prediction(data) {
-    console.log("Prediction: ", data.prediction);
+    if (data.prediction === 0) {
+        alert("The prediction result is: under");
+    } else if (data.prediction === 1) {
+        alert("The prediction result is: over");
+    } else {
+        alert("Unexpected prediction result: " + data.prediction);
+    }
 }
 
 function passToModel(home_name, visitor_name, over_under) {
     const url = `http://127.0.0.1:5000/api/v1.0/predict/${home_name}/${visitor_name}/${over_under}`;
     d3.json(url).then(function (data) {
         get_prediction(data);
-
     }).catch(function (error) {
         console.error('There was a problem with the fetch operation:', error);
     });
 }
-
 
 // Populate the over/under line dropdown
 function populateOverUnderDropdown() {
