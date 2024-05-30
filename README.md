@@ -19,6 +19,6 @@ Download MongoDB, Sci-Kit Learn, Pandas, MORE TO BE ADDED
 ## $\color{lightskyblue}{\textsf{Authors}}$
 David Avellaneda, Ben Tokarczyk, Rayon King, Latasha Jones
 
-## Data Sources
+## $\color{lightskyblue}{\textsf{Data Sources}}$
 DATA SOURCES WILL BE ADDED
 

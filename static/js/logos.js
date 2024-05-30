@@ -1,9 +1,6 @@
 // Function to fetch data from your API using d3
 async function fetchTeams() {
     try {
-        const data = await d3.json('http://127.0.0.1:5000/api/v1.0/predict/');
-        const { home_name, visitor_name, over_under } = data;
-
         // Update the dropdown values
         updateDropdown('home-team', home_name);
         updateDropdown('away-team', visitor_name);
@@ -166,9 +163,26 @@ function submitSelection() {
             homeLogo.classList.remove('pop-out');
             awayLogo.classList.remove('pop-out');
             alert("You selected " + homeTeam + " as the home team, " + awayTeam + " as the away team, and an Over/Under Line of " + overUnderLine + ".");
+            passToModel(homeTeam, awayTeam, overUnderLine);
         }, 500);
     }
+    
 }
+   
+function get_prediction(data) {
+    console.log("Prediction: ", data.prediction);
+}
+
+function passToModel(home_name, visitor_name, over_under) {
+    const url = `http://127.0.0.1:5000/api/v1.0/predict/${home_name}/${visitor_name}/${over_under}`;
+    d3.json(url).then(function (data) {
+        get_prediction(data);
+
+    }).catch(function (error) {
+        console.error('There was a problem with the fetch operation:', error);
+    });
+}
+
 
 // Populate the over/under line dropdown
 function populateOverUnderDropdown() {
