@@ -10,7 +10,21 @@ For instance, if the over/under line is established at 200.5, bettors can place 
 
 
 ## $\color{lightskyblue}{\textsf{Visuals}}$
-ADD SCREENSHOTS IN THIS SECTION
+Model Results: <br>
+<img src="Confusion_Matrix.png">
+
+## $\color{lightskyblue}{\textsf{How to Run the Application}}$
+- Install pandas, sklearn, flask, postgresql, and sqlalchemy
+- Create a postgresql database named `nba_db`
+- Open your terminal and navigate to the repository with these files and run 'python app1.py'
+- Use live server to open `index.html`
+- Select a home team, away team, and an over/under line to predict then, select 'submit'
+- The model will have message with the "over" or "under" prediction
+- Underneath the prediction model select a team name to view the stats for the 2023-2024 regular season
+
+
+## $\color{lightskyblue}{\textsf{Summary of the Model}}$
+The predictive model employed in our sports betting application is a Random Forest classifier. This model provides a binary classification output of either "over" or "under" based on the selected over/under line. It achieves an accuracy of 92.8% and utilizes 1000 estimators. The model demonstrates a 94% accuracy rate for both "true positive" (under) and "true negative" (over) predictions.
 
 ## $\color{lightskyblue}{\textsf{Installation}}$
 Download MongoDB, Sci-Kit Learn, Pandas, MORE TO BE ADDED
