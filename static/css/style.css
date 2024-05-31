@@ -159,8 +159,9 @@ h1.team_name {
 }
 
 .video-container {
-    position: relative;
-    width: 80vw;
+    margin: auto;
+    /* position: relative; */
+    width: 70vw;
     height: 50vh;
     overflow: hidden;
     border: 3px solid #444444;
@@ -195,4 +196,13 @@ h1.team_name {
 }
 #over-under-line {
     margin-top: 10px; 
+    background-color:gray;
+    font-family: dubai;
+    font-size: 20px;
+    color: white;
+}
+
+#prediction-text {
+
+    margin-top: 25px;
 }
