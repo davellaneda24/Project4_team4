@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/sporting-outline');
 
 body {
-    background: linear-gradient(to bottom, rgb(121, 66, 66), grey);
+    background: linear-gradient(to bottom, rgb(131, 73, 73), rgb(126, 125, 125));
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -61,7 +61,7 @@ option {
 }
 
 h1 {
-    color: rgb(177, 177, 177);
+    color: rgb(223, 223, 223);
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 36px;
 }
@@ -116,8 +116,13 @@ h1.team_name {
 #vs {
     font-size: 36px;
     font-weight: bold;
-    align-self: center;
     font-family: Helvetica; 
+    color: rgb(255, 0, 0);
+    margin: 0 20px; 
+    padding-top: 10px; 
+    position: relative; 
+    top: 10px;
+    left: 6px;
 }
 
 #submit-button-container {
@@ -137,21 +142,9 @@ h1.team_name {
         transform: scale(1);
     }
 }
-
 .pop-out {
     animation: popOut 0.5s ease-in-out;
 }
-
-.row, .row * {
-    color: rgb(240, 13, 13);
-    font-family: Helvetica; 
-}
-
-.container, .container * {
-    color: rgb(29, 29, 29);
-    font-family: Helvetica; 
-}
-
 .footer {
     font-size: 14px;
     padding: 20px;
@@ -172,4 +165,34 @@ h1.team_name {
     overflow: hidden;
     border: 3px solid #444444;
     border-radius: 10px;
+}
+#prediction-model {
+    margin-top: 80px;
+    background-image: url('https://1x.com/images/user/0326475bf2b0e7cfea5306e4ab362667-hd2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(230, 230, 230); 
+}
+.nav-link {
+    color: rgb(255, 255, 255);
+}
+.row.over-under-row {
+    margin-top: 70px; 
+    position: relative;
+    left: 4px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+.col-md-12.over-under-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#over-under-line {
+    margin-top: 10px; 
 }
