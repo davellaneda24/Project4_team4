@@ -168,9 +168,9 @@ function submitSelection() {
 
 function get_prediction(data) {
     if (data.prediction === 0) {
-        alert("The prediction result is: under");
+        alert("The prediction result is: Under");
     } else if (data.prediction === 1) {
-        alert("The prediction result is: over");
+        alert("The prediction result is: Over");
     } else {
         alert("Unexpected prediction result: " + data.prediction);
     }
