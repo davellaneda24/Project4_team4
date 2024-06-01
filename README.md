@@ -28,7 +28,7 @@ The predictive model employed in our sports betting application is a Random Fore
 
 
 ## $\color{lightskyblue}{\textsf{Authors}}$
-David Avellaneda, Ben Tokarczyk, Rayon King, Latasha Jones
+[David Avellaneda](https://github.com/davellaneda24), [Rayon King](https://github.com/rayonking123), [Latasha Jones](https://github.com/Latashajd40), [Ben Tokarczyk](https://github.com/tokarczykbl)
 
 ## $\color{lightskyblue}{\textsf{Data Sources}}$
 DATA SOURCES WILL BE ADDED
