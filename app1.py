@@ -11,8 +11,8 @@ from flask_cors import CORS
 from sklearn.preprocessing import StandardScaler
 
 # Load the model and scaler
-sports_bet_model = joblib.load("sports_bet_model.pkl")
-scaler = joblib.load("scaler.pkl")
+sports_bet_model = joblib.load("Modeling/sports_bet_model.pkl")
+scaler = joblib.load("Modeling/scaler.pkl")
 
 ################################################
 # Database Setup
@@ -183,8 +183,6 @@ def predict(home_name, visitor_name, over_under):
 
     df = pd.DataFrame([numeric_features])
     
-    # return jsonify(numeric_features)
-
     # Create the input data using the user inputs
     input_data = df
     

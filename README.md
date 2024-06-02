@@ -11,7 +11,7 @@ For instance, if the over/under line is established at 200.5, bettors can place 
 
 ## $\color{lightskyblue}{\textsf{Visuals}}$
 Model Results: <br>
-<img src="Confusion_Matrix.png">
+<img src="Images/Confusion_Matrix.png">
 
 ## $\color{lightskyblue}{\textsf{How to Run the Application}}$
 - Install pandas, sklearn, flask, postgresql, and sqlalchemy
