@@ -15,7 +15,8 @@ Model Results: <br>
 
 ## $\color{lightskyblue}{\textsf{How to Run the Application}}$
 - Install pandas, sklearn, flask, postgresql, and sqlalchemy
-- Create a postgresql database named `nba_db` and create tables `team_data` and `over_under` and import the respective csv files
+- The database ERD is located in the `Database` folder titled `nba_schema.sql`
+- Create a postgresql database named `nba_db` and create tables `team_data` and `over_under` located in the `data_files` folder and import the respective csv files
 - Open your terminal and navigate to the repository with these files and run 'python app1.py'
 - Use live server to open `index.html`
 - Select a home team, away team, and an over/under line to predict then, select 'submit'
