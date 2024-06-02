@@ -206,3 +206,7 @@ h1.team_name {
 
     margin-top: 25px;
 }
+
+#result-chart {
+    height: 300px !important;
+}

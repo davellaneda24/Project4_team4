@@ -202,12 +202,13 @@
                             <li><strong>3-Point Percentage (3P%):</strong> <span id="three-point-per-game">N/A</span></li>
                             <li><strong>Turnovers Per Game (TPG):</strong> <span id="turnovers-per-game">N/A</span></li>
                         </ul>
-                    </div>                                 
-                  </div>
+                    </div class="chart-container">
+                    <canvas id="result-chart"></canvas>                                 
               </div>
-          </section>
-      </div>
-      <hr>
+          </div>
+      </section>
+  </div>
+  <hr>
 
       <div class="row">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-1 border-bottom"></div>
@@ -253,7 +254,9 @@
 
     </div>
 
-    <script src="./static/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <script src="./static/js/logos.js"></script>
     <script src="./static/js/stats.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>

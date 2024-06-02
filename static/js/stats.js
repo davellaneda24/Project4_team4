@@ -691,6 +691,15 @@ const teamStats = [
       }
 ]
 
+let chartInstance = null;
+
+document.getElementById('team-select').addEventListener('change', function () {
+  const teamName = this.value;
+  updateLogo('team-select', 'logo-div');
+  displayTeamStats(teamName);
+  createPieChart(teamName);
+});
+
 function updateLogo(teamDropdownId, logoDivId) {
     var selectedTeam = document.getElementById(teamDropdownId).value;
     var logoUrl = "";
@@ -817,8 +826,83 @@ function displayTeamStats(teamName) {
     }
 }
 
-document.getElementById('team-select').addEventListener('change', function () {
-    const teamName = this.value;
-    updateLogo('team-select', 'logo-div');
-    displayTeamStats(teamName);
+function createPieChart(teamName) {
+  Papa.parse('http://localhost:8000/Model_Ready.csv', {
+      download: true,
+      header: true,
+      complete: function (results) {
+          const data = results.data;
+          const filteredData = data.filter(game => 
+              game.home_name === teamName || game.visitor_name === teamName
+          );
+          
+          const overCount = filteredData.filter(game => game.Result === 'Over').length;
+          const underCount = filteredData.filter(game => game.Result === 'Under').length;
+
+          // Ensure the canvas element exists before proceeding
+          const canvas = document.getElementById('result-chart');
+            if (canvas) {
+                // Destroy the existing chart instance if it exists
+                if (chartInstance) {
+                    chartInstance.destroy();
+                }
+
+              const ctx = canvas.getContext('2d');
+             chartInstance = new Chart(ctx, {
+                  type: 'pie',
+                  data: {
+                      labels: ['Over', 'Under'],
+                      datasets: [{
+                          data: [overCount, underCount],
+                          backgroundColor: ['#2E86C1', '#EB984E'],
+                          borderColor: ['white', 'white'],
+                          borderWidth: 1
+                      }]
+                  },
+                  options: {
+                      responsive: true,
+                      maintainAspectRatio: false,
+                      plugins: {
+                          legend: {
+                              position: 'top',
+                              labels: {
+                                color: 'black',
+                                font: {
+                                  size: 24
+                                },
+                              }
+                          },
+                          title: {
+                              display: true,
+                              text: `${teamName} Game Results`,
+                              font: {
+                                size: 42,
+                                weight: 'bold'
+                              },
+                              color: 'black',
+                          },
+                          datalabels: {
+                            formatter: (value, ctx) => {
+                                let sum = 0;
+                                let dataArr = ctx.chart.data.datasets[0].data;
+                                dataArr.map(data => {
+                                    sum += data;
+                                });
+                                let percentage = (value * 100 / sum).toFixed(2) + "%";
+                                return percentage;
+                            },
+                            color: 'black',
+                            font: {
+                                size: 24,
+                            }
+                        }
+                    }
+                },
+                plugins: [ChartDataLabels]
+            });
+        } else {
+            console.error('Canvas element not found');
+        }
+    }
 });
+}
