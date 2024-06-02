@@ -751,6 +751,40 @@ const teamStats = [
       }
 ]
 
+const teamColors = {
+  "Atlanta Hawks": ['#E03A3E', '#C1D32F'],
+  "Boston Celtics": ['#007A33', '#BA9653'],
+  "Brooklyn Nets": ['#000000', '#FFFFFF'],
+  "Charlotte Hornets": ['#1D1160', '#00788C'],
+  "Chicago Bulls": ['#CE1141', '#000000'],
+  "Cleveland Cavaliers": ['#860038', '#041E42'],
+  "Dallas Mavericks": ['#00538C', '#B8C4CA'],
+  "Denver Nuggets": ['#0E2240', '#FEC524'],
+  "Detroit Pistons": ['#C8102E', '#006BB6'],
+  "Golden State Warriors": ['#1D428A', '#FFC72C'],
+  "Houston Rockets": ['#CE1141', '#C4CED4'],
+  "Indiana Pacers": ['#002D62', '#FDBB30'],
+  "LA Clippers": ['#C8102E', '#1D42BA'],
+  "Los Angeles Lakers": ['#552583', '#FDB927'],
+  "Memphis Grizzlies": ['#5D76A9', '#12173F'],
+  "Miami Heat": ['#98002E', '#F9A01B'],
+  "Milwaukee Bucks": ['#00471B', '#EEE1C6'],
+  "Minnesota Timberwolves": ['#0C2340', '#236192'],
+  "New Orleans Pelicans": ['#0C2340', '#C8102E'],
+  "New York Knicks": ['#006BB6', '#F58426'],
+  "Oklahoma City Thunder": ['#007AC1', '#EF3B24'],
+  "Orlando Magic": ['#0077C0', '#C4CED4'],
+  "Philadelphia 76ers": ['#006BB6', '#ED174C'],
+  "Phoenix Suns": ['#1D1160', '#E56020'],
+  "Portland Trail Blazers": ['#E03A3E', '#000000'],
+  "Sacramento Kings": ['#5A2D81', '#63727A'],
+  "San Antonio Spurs": ['#C4CED4', '#000000'],
+  "Toronto Raptors": ['#CE1141', '#000000'],
+  "Utah Jazz": ['#002B5C', '#F9A01B'],
+  "Washington Wizards": ['#002B5C', '#E31837']
+};
+
+
 let chartInstance = null;
 
 document.getElementById('team-select').addEventListener('change', function () {
@@ -895,7 +929,7 @@ function createPieChart(teamName) {
           labels: ['Over', 'Under'],
           datasets: [{
               data: [team.over, team.under],
-              backgroundColor: ['#E88311', '#0DC3DC'],
+              backgroundColor: teamColors[teamName]
           }]
       };
       const options = {
