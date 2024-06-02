@@ -20,7 +20,9 @@ const teamStats = [
         "tpa": 37.69318181818182,
         "tpm": 13.613636363636363,
         "tpp": 0.36200000000000004,
-        "turnovers": 13.931818181818182
+        "turnovers": 13.931818181818182,
+        "over": 69,
+        "under": 67
       },
       {
         "team_name": "Boston Celtics",
@@ -43,7 +45,9 @@ const teamStats = [
         "tpa": 42.23762376237624,
         "tpm": 16.18811881188119,
         "tpp": 0.38299999999999995,
-        "turnovers": 12.089108910891088
+        "turnovers": 12.089108910891088,
+        "over": 80,
+        "under": 88
       },
       {
         "team_name": "Brooklyn Nets",
@@ -66,7 +70,9 @@ const teamStats = [
         "tpa": 36.77906976744186,
         "tpm": 13.44186046511628,
         "tpp": 0.366,
-        "turnovers": 13.383720930232558
+        "turnovers": 13.383720930232558,
+        "over": 63,
+        "under": 76
       },
       {
         "team_name": "Charlotte Hornets",
@@ -89,7 +95,9 @@ const teamStats = [
         "tpa": 33.97674418604651,
         "tpm": 11.872093023255815,
         "tpp": 0.348,
-        "turnovers": 14.011627906976743
+        "turnovers": 14.011627906976743,
+        "over": 62,
+        "under": 69
       },
       {
         "team_name": "Chicago Bulls",
@@ -112,7 +120,9 @@ const teamStats = [
         "tpa": 32.168539325842694,
         "tpm": 11.50561797752809,
         "tpp": 0.35700000000000004,
-        "turnovers": 12.49438202247191
+        "turnovers": 12.49438202247191,
+        "over": 58,
+        "under": 83
       },
       {
         "team_name": "Cleveland Cavaliers",
@@ -135,7 +145,9 @@ const teamStats = [
         "tpa": 36.5,
         "tpm": 13.16326530612245,
         "tpp": 0.359,
-        "turnovers": 13.673469387755102
+        "turnovers": 13.673469387755102,
+        "over": 67,
+        "under": 75
       },
       {
         "team_name": "Dallas Mavericks",
@@ -158,7 +170,9 @@ const teamStats = [
         "tpa": 38.676767676767675,
         "tpm": 14.272727272727273,
         "tpp": 0.36700000000000005,
-        "turnovers": 12.676767676767676
+        "turnovers": 12.676767676767676,
+        "over": 72,
+        "under": 86
       },
       {
         "team_name": "Denver Nuggets",
@@ -181,7 +195,9 @@ const teamStats = [
         "tpa": 31.666666666666668,
         "tpm": 11.646464646464647,
         "tpp": 0.368,
-        "turnovers": 12.767676767676768
+        "turnovers": 12.767676767676768,
+        "over": 77,
+        "under": 66
       },
       {
         "team_name": "Detroit Pistons",
@@ -204,7 +220,9 @@ const teamStats = [
         "tpa": 31.91860465116279,
         "tpm": 11.13953488372093,
         "tpp": 0.349,
-        "turnovers": 15.383720930232558
+        "turnovers": 15.383720930232558,
+        "over": 62,
+        "under": 70
       },
       {
         "team_name": "Golden State Warriors",
@@ -227,7 +245,9 @@ const teamStats = [
         "tpa": 38.875,
         "tpm": 14.738636363636363,
         "tpp": 0.379,
-        "turnovers": 14.590909090909092
+        "turnovers": 14.590909090909092,
+        "over": 71,
+        "under": 80
       },
       { 
         "team_name": "Houston Rockets",
@@ -250,7 +270,9 @@ const teamStats = [
         "tpa": 36,
         "tpm": 12.563218390804598,
         "tpp": 0.349,
-        "turnovers": 12.954022988505747
+        "turnovers": 12.954022988505747,
+        "over": 74,
+        "under": 59
       },
       {
         "team_name": "Indiana Pacers",
@@ -273,7 +295,9 @@ const teamStats = [
         "tpa": 35.27884615384615,
         "tpm": 13.01923076923077,
         "tpp": 0.37,
-        "turnovers": 12.951923076923077
+        "turnovers": 12.951923076923077,
+        "over": 75,
+        "under": 69
       },
       {
         "team_name": "LA Clippers",
@@ -296,7 +320,9 @@ const teamStats = [
         "tpa": 32.858695652173914,
         "tpm": 12.369565217391305,
         "tpp": 0.377,
-        "turnovers": 13.26086956521739
+        "turnovers": 13.26086956521739,
+        "over": 64,
+        "under": 67
       },
       {
         "team_name": "Los Angeles Lakers",
@@ -319,7 +345,9 @@ const teamStats = [
         "tpa": 31.45263157894737,
         "tpm": 11.68421052631579,
         "tpp": 0.368,
-        "turnovers": 14.16842105263158
+        "turnovers": 14.16842105263158,
+        "over": 71,
+        "under": 66
       },
       {
         "team_name": "Memphis Grizzlies",
@@ -342,7 +370,9 @@ const teamStats = [
         "tpa": 38.195402298850574,
         "tpm": 13.137931034482758,
         "tpp": 0.344,
-        "turnovers": 15.183908045977011
+        "turnovers": 15.183908045977011,
+        "over": 63,
+        "under": 77
       },
       {
         "team_name": "Miami Heat",
@@ -365,7 +395,9 @@ const teamStats = [
         "tpa": 33.90425531914894,
         "tpm": 12.393617021276595,
         "tpp": 0.365,
-        "turnovers": 12.946808510638299
+        "turnovers": 12.946808510638299,
+        "over": 73,
+        "under": 87
       },
       {
         "team_name": "Milwaukee Bucks",
@@ -388,7 +420,9 @@ const teamStats = [
         "tpa": 37.89247311827957,
         "tpm": 13.96774193548387,
         "tpp": 0.369,
-        "turnovers": 13.010752688172044
+        "turnovers": 13.010752688172044,
+        "over": 76,
+        "under": 71
       },
       {
         "team_name": "Minnesota Timberwolves",
@@ -411,7 +445,9 @@ const teamStats = [
         "tpa": 33.04,
         "tpm": 12.71,
         "tpp": 0.385,
-        "turnovers": 14.02
+        "turnovers": 14.02,
+        "over": 73,
+        "under": 70
       },
       {
         "team_name": "New Orleans Pelicans",
@@ -434,7 +470,9 @@ const teamStats = [
         "tpa": 32.51086956521739,
         "tpm": 12.141304347826088,
         "tpp": 0.369,
-        "turnovers": 13.630434782608695
+        "turnovers": 13.630434782608695,
+        "over": 68,
+        "under": 76
       },
       {
         "team_name": "New York Knicks",
@@ -457,7 +495,9 @@ const teamStats = [
         "tpa": 35.484848484848484,
         "tpm": 13.1010101010101,
         "tpp": 0.371,
-        "turnovers": 13.06060606060606
+        "turnovers": 13.06060606060606,
+        "over": 77,
+        "under": 67
       },
       {
         "team_name": "Oklahoma City Thunder",
@@ -480,7 +520,9 @@ const teamStats = [
         "tpa": 34.41237113402062,
         "tpm": 13.206185567010309,
         "tpp": 0.38299999999999995,
-        "turnovers": 12.608247422680412
+        "turnovers": 12.608247422680412,
+        "over": 72,
+        "under": 74
       },
       {
         "team_name": "Orlando Magic",
@@ -503,7 +545,9 @@ const teamStats = [
         "tpa": 31.817204301075268,
         "tpm": 11.053763440860216,
         "tpp": 0.349,
-        "turnovers": 14.720430107526882
+        "turnovers": 14.720430107526882,
+        "over": 68,
+        "under": 72
       },
       {
         "team_name": "Philadelphia 76ers",
@@ -526,7 +570,9 @@ const teamStats = [
         "tpa": 33.8494623655914,
         "tpm": 12.35483870967742,
         "tpp": 0.36200000000000004,
-        "turnovers": 12.13978494623656
+        "turnovers": 12.13978494623656,
+        "over": 70,
+        "under": 77
       },
       {
         "team_name": "Phoenix Suns",
@@ -549,7 +595,9 @@ const teamStats = [
         "tpa": 32.27472527472528,
         "tpm": 12.307692307692308,
         "tpp": 0.379,
-        "turnovers": 15.065934065934066
+        "turnovers": 15.065934065934066,
+        "over": 67,
+        "under": 79
       },
       {
         "team_name": "Portland Trail Blazers",
@@ -572,7 +620,9 @@ const teamStats = [
         "tpa": 33.37647058823529,
         "tpm": 11.48235294117647,
         "tpp": 0.345,
-        "turnovers": 15.352941176470589
+        "turnovers": 15.352941176470589,
+        "over": 63,
+        "under": 74
       },
       {
         "team_name": "Sacramento Kings",
@@ -595,7 +645,9 @@ const teamStats = [
         "tpa": 39.60674157303371,
         "tpm": 14.348314606741573,
         "tpp": 0.36200000000000004,
-        "turnovers": 13.235955056179776
+        "turnovers": 13.235955056179776,
+        "over": 65,
+        "under": 60
       },
       {
         "team_name": "San Antonio Spurs",
@@ -618,7 +670,9 @@ const teamStats = [
         "tpa": 36.35632183908046,
         "tpm": 12.666666666666666,
         "tpp": 0.35,
-        "turnovers": 15.206896551724139
+        "turnovers": 15.206896551724139,
+        "over": 69,
+        "under": 67
       },
       {
         "team_name": "Toronto Raptors",
@@ -641,7 +695,9 @@ const teamStats = [
         "tpa": 33.082352941176474,
         "tpm": 11.494117647058824,
         "tpp": 0.34600000000000003,
-        "turnovers": 14.270588235294118
+        "turnovers": 14.270588235294118,
+        "over": 69,
+        "under": 70
       },
       {
         "team_name": "Utah Jazz",
@@ -664,7 +720,9 @@ const teamStats = [
         "tpa": 36.45348837209303,
         "tpm": 12.848837209302326,
         "tpp": 0.35200000000000004,
-        "turnovers": 15.779069767441861
+        "turnovers": 15.779069767441861,
+        "over": 71,
+        "under": 70
       },
       {
         "team_name": "Washington Wizards",
@@ -687,7 +745,9 @@ const teamStats = [
         "tpa": 35.705882352941174,
         "tpm": 12.388235294117647,
         "tpp": 0.34600000000000003,
-        "turnovers": 13.952941176470588
+        "turnovers": 13.952941176470588,
+        "over": 65,
+        "under": 64
       }
 ]
 
@@ -827,82 +887,67 @@ function displayTeamStats(teamName) {
 }
 
 function createPieChart(teamName) {
-  Papa.parse('http://localhost:8000/Model_Ready.csv', {
-      download: true,
-      header: true,
-      complete: function (results) {
-          const data = results.data;
-          const filteredData = data.filter(game => 
-              game.home_name === teamName || game.visitor_name === teamName
-          );
-          
-          const overCount = filteredData.filter(game => game.Result === 'Over').length;
-          const underCount = filteredData.filter(game => game.Result === 'Under').length;
+  const team = teamStats.find(team => team.team_name === teamName);
 
-          // Ensure the canvas element exists before proceeding
-          const canvas = document.getElementById('result-chart');
-            if (canvas) {
-                // Destroy the existing chart instance if it exists
-                if (chartInstance) {
-                    chartInstance.destroy();
-                }
-
-              const ctx = canvas.getContext('2d');
-             chartInstance = new Chart(ctx, {
-                  type: 'pie',
-                  data: {
-                      labels: ['Over', 'Under'],
-                      datasets: [{
-                          data: [overCount, underCount],
-                          backgroundColor: ['#2E86C1', '#EB984E'],
-                          borderColor: ['white', 'white'],
-                          borderWidth: 1
-                      }]
-                  },
-                  options: {
-                      responsive: true,
-                      maintainAspectRatio: false,
-                      plugins: {
-                          legend: {
-                              position: 'top',
-                              labels: {
-                                color: 'black',
-                                font: {
-                                  size: 24
-                                },
-                              }
-                          },
-                          title: {
-                              display: true,
-                              text: `${teamName} Game Results`,
-                              font: {
-                                size: 42,
-                                weight: 'bold'
-                              },
-                              color: 'black',
-                          },
-                          datalabels: {
-                            formatter: (value, ctx) => {
-                                let sum = 0;
-                                let dataArr = ctx.chart.data.datasets[0].data;
-                                dataArr.map(data => {
-                                    sum += data;
-                                });
-                                let percentage = (value * 100 / sum).toFixed(2) + "%";
-                                return percentage;
-                            },
-                            color: 'black',
-                            font: {
-                                size: 24,
-                            }
+  if (team) {
+      const ctx = document.getElementById('overUnderChart').getContext('2d');
+      const data = {
+          labels: ['Over', 'Under'],
+          datasets: [{
+              data: [team.over, team.under],
+              backgroundColor: ['#E88311', '#0DC3DC'],
+          }]
+      };
+      const options = {
+          responsive: true,
+          plugins: {
+              legend: {
+                  position: 'top',
+                  labels: {
+                      font: {
+                          size: 24,
+                      },
+                      color: 'white'
+                  }
+              },
+              tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        let label = context.label || '';
+                        if (label) {
+                            label += ': ';
                         }
+                        label += context.raw;
+                        return label;
                     }
+                }
+            },
+            datalabels: {
+                formatter: (value, context) => {
+                    const dataset = context.chart.data.datasets[0];
+                    const total = dataset.data.reduce((acc, curr) => acc + curr, 0);
+                    const percentage = (value / total * 100).toFixed(2) + '%';
+                    return percentage;
                 },
-                plugins: [ChartDataLabels]
-            });
-        } else {
-            console.error('Canvas element not found');
+                color: '#ffffff', // Set the color of the percentage text
+                font: {
+                    size: 14, // Set the size of the percentage text
+                },
+                anchor: 'center',
+                align: 'center'
+            }
         }
+    };
+
+    if (chartInstance) {
+        chartInstance.destroy(); // Destroy the previous chart instance
     }
-});
+
+    chartInstance = new Chart(ctx, {
+        type: 'pie',
+        data: data,
+        options: options,
+        plugins: [ChartDataLabels]
+    });
+}
 }
