@@ -32,5 +32,6 @@ The predictive model employed in our sports betting application is a Random Fore
 [David Avellaneda](https://github.com/davellaneda24), [Rayon King](https://github.com/rayonking123), [Latasha Jones](https://github.com/Latashajd40), [Ben Tokarczyk](https://github.com/tokarczykbl)
 
 ## $\color{lightskyblue}{\textsf{Data Sources}}$
-DATA SOURCES WILL BE ADDED
+- https://the-odds-api.com/
+- https://rapidapi.com/api-sports/api/api-nba/
 
